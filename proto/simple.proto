@@ -1,0 +1,14 @@
+ syntax = "proto3";
+
+ service Simple{
+    rpc SayHello(HelloRequest) returns (HelloReplay){}
+ }
+
+ message HelloRequest{
+     string name = 1;
+ }
+ message HelloReplay{
+     string message = 1;
+ }
+
+
